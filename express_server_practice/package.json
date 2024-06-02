@@ -1,0 +1,16 @@
+{
+  "name": "express_server_practice",
+  "version": "1.0.0",
+  "description": "This is a practice file for expressJS",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}

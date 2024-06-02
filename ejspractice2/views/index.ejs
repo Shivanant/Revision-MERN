@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS practice2</title>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <p><%= seconds %></p>
+    <!-- The locals find the json passed in thenobject and determine it if it exists or not -->
+    <% (locals.items)?console.log("True"):console.log("False") %>
+    <% (locals.fruits)?console.log("True"):console.log("False") %>
+
+    <% if (seconds %2 ===0 ){ %>
+
+        <ul>
+           <% items.forEach((item)=>{ %>
+            <li><%= item %></li>
+
+
+            <%})%>
+        </ul>
+
+    <% } %>
+    <%-htmlcontent %>
+
+    
+</body>
+</html>

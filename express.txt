@@ -1,0 +1,60 @@
+A Server is a big and powerful computer that is running 24*7 and it is also listening to any request asking for a resource. 
+In addition to a server the backend also consists of an application that is running on the server computer this could be a simple backend website.
+
+Express is used to create server.
+
+Local host is used when we dont have a server on internet ans instead we host our server locally on out computer.(https://localhost:3000
+
+port are like a door to a room. eg: metro gate no1,no2 etc etc
+
+
+
+(How to integrate python with MERN)
+[1]: https://stackoverflow.com/questions/73980821/how-can-i-integrate-python-scripts-into-a-mern-stack ""
+[2]: https://medium.com/@tabish_14839/how-can-a-machine-learning-model-python-be-deployed-in-a-mern-stack-web-application-2ad0192bf0e3 ""
+[3]: https://www.skillvertex.com/blog/mern-stack-with-python/ ""
+[4]: https://blog.ozitechgroup.com/blog/build-an-ai-chatbot-using-mern-stack/ ""
+
+Certainly! Integrating Python-based AI libraries with a MERN (MongoDB, Express.js, React.js, Node.js) stack involves a few steps. Let's explore how you can achieve this:
+
+1. **Prepare Your Machine Learning Model**:
+    - Ensure that your machine learning model is trained, tested, and ready for deployment. Save the model and any required pre-processing steps as a Python script.
+
+2. **Expose the ML Model as an API**:
+    - Create a RESTful API in Python using a web framework like **Flask** or **FastAPI**.
+    - In your Python script, define an endpoint that corresponds to your data analysis task. For example:
+        ```python
+        # Example Flask route
+        from flask import Flask, jsonify
+
+        app = Flask(__name__)
+
+        @app.route('/api/dopythonhere', methods=['GET'])
+        def perform_data_analysis():
+            # Your data analysis code here
+            result = {'message': 'Data analysis completed successfully'}
+            return jsonify(result)
+        ```
+
+3. **Integrate with Your MERN Stack**:
+    - Now, you have two options:
+        - **Option 1: Completely Migrate and Integrate Python App**:
+            - If your existing Python app is functional, consider migrating it entirely into your Node.js & Express app.
+            - Forget about the Python source code and handle everything within your MERN stack.
+        - **Option 2: Call Python API via MERN Application**:
+            - If you want to keep your Python app separate, make sure it functions as a web API.
+            - In your Node.js & Express app, use libraries like **Axios** to call the Python API endpoints.
+            - Alternatively, you can directly call the Python API from your React front-end using vanilla web APIs or any other libraries you prefer.
+
+Remember that the choice depends on your specific requirements and the complexity of your existing Python app. Both approaches allow you to integrate Python-based AI capabilities seamlessly into your MERN stack. Happy coding! 🚀
+
+Source: Conversation with Bing, 1/5/2024
+(1) How can I Integrate Python Scripts into a MERN stack. https://stackoverflow.com/questions/73980821/how-can-i-integrate-python-scripts-into-a-mern-stack.
+(2) How can a machine learning model (Python) be deployed in a MERN stack .... https://medium.com/@tabish_14839/how-can-a-machine-learning-model-python-be-deployed-in-a-mern-stack-web-application-2ad0192bf0e3.
+(3) Mern Stack With Python. https://www.skillvertex.com/blog/mern-stack-with-python/.
+(4) Build an AI chatbot using MERN stack – Ozitech. https://blog.ozitechgroup.com/blog/build-an-ai-chatbot-using-mern-stack/.
+
+
+
+
+

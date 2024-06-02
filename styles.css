@@ -1,0 +1,57 @@
+h1{
+    color: brown;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    background-color: bisque;
+}
+
+.sunidhi{
+    background-color: pink;
+}
+
+.sunidhi button{
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: brown;
+    font-size: large;
+    margin: 10px;
+}
+.image{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+img{
+
+    width: 400px;
+    height: 500px;
+}
+button {
+    height: 50px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 5px;
+    margin: 10px;
+    transition: 3ms;
+}
+
+button:hover {
+    background-color: black;
+    color: white; /* Example transformation for hover */
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+}
